@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>entertainment</title>
+    <link rel="stylesheet" href="./css/entertainment.css">
+</head>
+<body>
+    <!-- 页眉区header和导航区nav采用绝对定位布局 -->
+    <!-- 页眉区header -->
+    <header>
+        <!-- 页眉区左上角蝴蝶图案 样式id为koutu -->
+        <img id="koutu" src="./image/entertainment/butterfly3.PNG" alt="">
+        <!-- 页眉文字区：用div封装 -->
+        <div>
+           <section id="head">Welcome to <br>Jin Yaxin's self-introduction</section>
+           <!-- 页眉区右上角巧克力图案 样式id为yemei -->
+           <img src="./image/entertainment/yemei3.PNG" alt="" id="yemei">
+           <section id="head_right">Life is like a box of chocolates.生活就像一盒巧克力。</section> 
+        </div>
+    </header>
+    <!-- end of header -->
+     
+    <!-- 导航区nav -->
+    <!-- 包含基本信息（首页）、在校经历、比赛经历、课外生活、留言板五个页面 -->
+    <nav>
+        <ul>
+            <li><a href="./index.html">基本信息</a></li>
+            <li><a href="./academic.html">在校经历</a></li>
+            <li><a href="./study.html">比赛经历</a></li>
+            <li class="selected"><a href="./entertainment.html">课外生活</a></li>
+            <li><a href="./chat.html">留言板</a></li>
+        </ul>
+    </nav>
+    <!-- end of nav -->
+
+    <!-- 头部概览区，用id为top的div放置内容，采用盒模型布局+浮动布局，高度、宽度固定 -->
+    <div id="top">
+        <!-- 视频自动循环播放，显示组件且默认静音 -->
+        <video src="./image/entertainment/video.mp4" width="800" height="500" autoplay controls loop muted></video>
+        <!-- 顶部文字区 用id为a_top的article放置顶部文字 字间距为3px 行间距扩大 -->
+        <article id="a_top">
+            <!-- 内容为包含三个列表项的无需列表ul -->
+            <ul>
+                <li><p> 我除了完成学校的课业和参加比赛，还利用课余时间发掘自己的兴趣爱好，如：摄影、小提琴、骑行；</p></li>
+                <li><p> 利用假期时间走出湖北，去看祖国的大好河山和各具特色的城市建设；</p></li>
+                <li><p>此外我在大一学年还额外报名参与了英语口语班的学习，锻炼了自己的口语表达能力以及扩展了思维方式……</p></li>
+            </ul>
+            <!-- end of ul -->
+        </article>
+        <!-- end of article -->
+    </div>
+    <!-- end of 头部概览区 -->
+
+    <!-- 图片，紧贴头部概览区 -->
+    <img id="img_top" src="./image/entertainment/green.PNG" alt="">
+
+    <!-- 详细内容区用公共类inner和inner_2(内边距更大)来放置所有内容，内容区宽度固定，高度自适应内容 采用盒模型布局+浮动布局-->
+    <!-- 小提琴板块：包含具有公共类a_right的article和三张图片，文字区浮动在右 -->
+    <div class="inner">
+        <img src="./image/entertainment/violin2.jpg" alt="" class="big">
+        <img src="./image/entertainment/violin1.jpg" alt="" class="small">
+        <img src="./image/entertainment/violin0.png" alt="" id="violin">
+        <article class="a_right">
+            <h1>小提琴</h1>
+            <p>
+                高中毕业的暑假，学业可以暂时放松些，多出来了许多空余时间，
+                为了丰富我的假期生活，我报名学习了自己喜欢许久的乐器——小提琴；<br>
+                自那以后我平时都会抽出零散的时间练习，稳扎稳打练好基础
+                虽然上大学以后回家的次数少了许多，但每个寒暑假我也都会到小提琴老师那学习一段时间
+            </p>
+        </article>
+    </div>
+    <!-- end of 小提琴板块 -->
+        
+    <!-- 骑行板块：包含具有公共类a_left的article和四张图片，文字区浮动在左，宽度固定 -->
+    <div class="inner">
+        <article class="a_left">
+            <h1>骑行</h1>
+            <p>
+                从小我就喜欢感受速度（当然是在可控范围内），喜欢运动带来的畅快，而骑行是我最能驾驭的、最感兴趣的运动方式之一，
+                它带给我的能量是不可替代的；<br>
+                大二搬进南湖校区后，由于学校不再受理新电动车的牌照办理，我为了上课方便买了一辆公路自行车。
+                虽然后来上课基本上是骑共享电动车，但只要有空，我就会和骑行搭子一起规划好路线，边感受武汉大街小巷的烟火气，
+                边享受骑行带来的快感
+            </p>
+        </article>
+        <img src="./image/entertainment/bicycle5.png" alt="" id="bicycle">
+        <img src="./image/entertainment/bicycle1.jpg" alt="" class="small_2">
+        <img src="./image/entertainment/bicycle2.jpg" alt="" class="small_2">
+        <img src="./image/entertainment/bicycle3.png" alt="" class="small_2">
+    </div>
+    <!-- end of 骑行板块-->
+
+    <!-- 摄影板块：包含具有公共类a_right的article和七张图片，文字区浮动在右，宽度固定 -->
+    <div class="inner_2">
+        <img src="./image/entertainment/camera.png" alt="" id="camera">
+        <article class="a_right">
+            <h1>摄影</h1>
+            <p>
+                随着时间的流逝，我们在成长，在衰老，身边的一切都是，所以我也越来越喜欢重复的记录，
+                家人，朋友，身边一切琐碎日常，微小事物；<br>
+                刚被我踩着的落叶，沿着破雨棚子落下的雨水，一些有着形状的光，每天会都有的落日。
+                生命在居诸不息间恒久地减损着，而记录地力量会定格下生命
+            </p>
+        </article>
+        <img src="./image/entertainment/top2.PNG" alt="" id="top_photograph">
+        <img src="./image/entertainment/photograph2.jpg" alt="" class="small">
+        <img src="./image/entertainment/photograph7.jpg" alt="" class="small"> 
+        <img src="./image/entertainment/photograph9.jpg" alt="" class="small">
+        <img src="./image/entertainment/photograph5.jpg" alt="" class="small">      
+        <img src="./image/entertainment/photograph6.jpg" alt="" class="small">
+    </div>
+    <!-- end of 摄影板块 -->
+
+    <!-- 旅游板块：包含id为a_shorter的article和八张图片，文字区浮动在左，高度固定 -->
+    <div class="inner_2">
+        <article id="a_shorter">
+            <h1>旅游</h1>
+            <p>
+                “旅行真正的快乐不在于目的地，而在于它的过程。遇见不同的人，遭遇到奇奇怪怪的事，
+                克服种种的困难，听听不同的语言，在我都是很大的快乐。
+                虽说一沙一世界，一花一天堂。更何况世界不止是一沙一花，世界是多少多少奇妙的现象积累起来的。
+                我看，我听，我的阅历就更丰富了”
+            </p>
+        </article>
+        <img src="./image/entertainment/travel.png" alt="" id="top_travel">
+        <img src="./image/entertainment/travel_changsha2.jpg" alt="" class="small">
+        <img src="./image/entertainment/travel0.png" alt="" id="travel">
+        <img src="./image/entertainment/travel_shanghai.jpg" alt="" class="high_small">
+        <img src="./image/entertainment/travel_hainan1.jpg" alt="" class="high_small">
+        <img src="./image/entertainment/travel_hainan2.jpg" alt="" class="high_small">
+        <img src="./image/entertainment/travel_guangdong1.jpg" alt="" class="high_small">
+        <img src="./image/entertainment/travel_luoyang.jpg" alt="" class="small">
+    </div>
+    <!-- end of 旅游板块 -->
+    
+    <!-- 口语学习板块：包含具有公共类a_right的article和七张图片，文字区浮动在右，宽度固定 -->
+    <div class="inner_2">
+        <img src="./image/entertainment/english0.png" alt="" id="english">
+        <article class="a_right">
+            <h1>口语学习</h1>
+            <p>
+                高考结束的暑假偶然接触到了IVE这个英语学习机构，然后就开始了长达一年的口语学习；<br>
+                由于性格问题，刚接触这种需要和“陌生人”敞开心扉，随心所欲地用英语聊天时，我是做不到非常自在的；<br>
+                但在学习期间，IVE的各阶段老师都很有亲和力，非常耐心地引导我大胆去说，表达自己的想法，<br>
+                所以在三个阶段的学习过程中，我也参与了无数次的英语talk，准备了近20次的个人pre/小组pre；<br>
+                现在回想起来，当时顶着课业压力坚持下来的日子是值得的
+            </p>
+        </article>
+        <img src="./image/entertainment/english1.png" alt="" class="english_1">
+        <img src="./image/entertainment/english2.jpg" alt="" class="english_1">
+        <img src="./image/entertainment/english4.png" alt="" class="english_1">
+        <img src="./image/entertainment/english3.png" alt="" class="english_1">
+        <img src="./image/entertainment/english6.png" alt="" class="english_1">
+        <img src="./image/entertainment/english7.jpg" alt="" class="english_1">
+    </div>
+    <!-- end of 口语学习板块 -->
+
+    <!-- 页脚区footer 采用盒模型布局，高度固定，文字居中，清除所有浮动元素 -->
+    <footer>Copyright&copy;Jin Yaxin</footer>
+    <!-- end of footer --> 
+
+</body>
+</html>

@@ -1,0 +1,269 @@
+body{
+    margin: 0px;
+    line-height: 1.25em;
+    font-family: Arial,Georgia, "Times New Roman", Times, serif;
+    background-size: contain;
+    background-image: url(./image/background.JPG);
+}
+/* header+nav采用定位布局 */
+/* 页眉 */
+header{
+    height: 120px;
+    background-color: #a1bba17e;
+}
+/* 页脚 footer采用盒模型布局 */
+footer{
+    background:#a1bba1ba; 
+    height: 35px;
+    padding-top: 10px;
+    margin-top: 30px;
+    font: italic 14px/1.5 Microsoft YaHei, Helvetica, STHeiti STXihei, Microsoft JhengHei, Tohoma, Arial;
+    color: #41594c;
+    text-align: center;
+    clear: both;
+}
+/* Welcome字体格式 */
+section#head{
+    position: absolute;
+    left: 195px;
+    top:  10px;
+    width: 480px;
+    font:500 xx-large Comic Sans MS,"Times New Roman",sans-serif;
+    color:  #438265b0;
+}
+/* Life字体格式 */
+section#head_right{
+    position: absolute;
+    right: 160px;
+    top: 50px;
+    line-height: 1.5;
+    font: 400 medium Comic Sans MS,"Times New Roman",Verdana;
+    color:  #438265b0;
+}
+
+/* header左上角的小图格式 */
+img#koutu{
+    position: absolute;
+    left: 40px;
+    top: 0;
+    height: 135px;
+    width: 130px;
+}
+/* header右上角的图案格式 */
+img#yemei{
+    top: 30px;
+    right: 60px;
+    position: absolute;
+    height: 60px;
+    width: 90px;
+    object-fit: cover;
+}
+
+/* --------------- nav ---------------- */
+nav{
+    height: 40px;
+    background-color: #a1bba1ba;
+}
+
+nav ul{
+    margin: 0px;
+    list-style-type: none;
+    position: absolute;
+    top:130px;
+    right: 5px;
+    height: 36px;
+}
+/* 列表项转换为内联元素 两项之间间隔40px */
+nav ul li{
+    display: inline;
+    /* 既能保持一个合适的距离,又能让上边框的长度不太夸张 */
+    padding: 10px 30px 10px 30px;
+    margin: 0px 10px 0px 10px;
+    height: 36px;
+}
+
+nav ul li a:link, nav ul li a:visited {
+	text-decoration: none;
+    letter-spacing: 2.5px;
+    color: #e8f5f0;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+/* 表示当前页面的列表项样式 */
+nav ul li.selected {
+    border-top:  #6aa16f96 solid 3px;
+    background-color: #aaceaae3;
+}
+
+/* 开头介绍整合到aside板块 包括video、右边的介绍字体与正文不同 */
+div#top{
+    margin: 20px 0px;
+    margin-top: 0;
+    height: 520px;
+    width: 1100px;
+    font: 110%/1.6em "PingFang SC",serif;
+    color: #41594c;
+    background-color: #e8f5f08d;
+    border-radius: 16px;
+    float: left;
+}
+img#img_top{
+    margin-left: 0;
+    margin-top: 60px;
+    height: 45%;
+    width: 15%;
+}
+article#a_top{
+    margin-right: 30px;
+    width: 230px;
+    height: 500px;
+    float: right;
+    letter-spacing:3px;
+    font: 0.9em/3 Microsoft YaHei, Helvetica, STHeiti STXihei, Microsoft JhengHei, Tohoma, Arial;
+}
+h1{
+    font-size: 1.6em;
+    font-weight: bolder;
+    line-height: 1.25em;
+    color: #41594c;
+    letter-spacing: 3px;
+    border-bottom: #41594c93 dashed 1.5px;
+}
+p{
+    font-size: 1.1em;
+    line-height: 25px;
+    color: #4e675a;
+}
+video{
+    margin: 10px 20px 10px 20px ;
+    float: left;
+}
+
+
+/* 把每个板块“封装”起来 不同内边距根据每个板块的内容而定,让页面不那么空或拥挤 */
+div.inner{
+    height: fit-content;
+    width: 1400px;
+    padding: 20px 0px;
+    clear: both;
+}
+div.inner_2{
+    height: fit-content;
+    width: 1400px;
+    padding: 120px 0px;
+    clear: both;
+}
+/* 横屏照片小版(圆形) */
+img.small{
+    margin: 30px 5px;
+    float: left;
+    clip-path: circle(35%);
+    height: 15%;
+    width: 20%;
+}
+/* 横屏照片大版(圆形) */
+img.big{
+    float: left;
+    clip-path: circle(35%);
+    height: 20%;
+    width: 27%;
+}
+/* bicycle长图小版照片(圆形) */
+img.small_2{
+    margin: 30px 5px;
+    float: left;
+    clip-path: circle(30%);
+    height: 20%;
+    width: 10%;
+}
+/* 长图(带圆角矩形) */
+img.high_small{
+    float: left;
+    width: 11%;
+    height: 22%;
+    margin: 30px 40px;
+    border-radius: 30px;
+}
+/* 口语部分宽图 */
+img.english_1{
+    width: 20%;
+    height: 5%;
+    float: left;
+    margin:20px 10px 20px 35px;
+    border-radius: 25px;
+}
+
+
+/* 无背景图片 */
+img#violin{
+    width: 8%;
+    height: 18%;
+    margin-top: 8%;
+    margin-right: 10%;
+    float: right;
+}
+img#camera{
+    width: 15%;
+    height: 15%;
+    margin-top: 13%;
+    margin-right: 5%;
+    float: right;
+}
+img#travel{
+    width: 10%;
+    height: 10%;
+    margin-top: 5%;
+    margin-right: 30px;
+    float: left;
+}
+img#top_photograph{
+    width: 15%;
+    height: 20%;
+    margin: 30px 50px;
+}
+img#bicycle{
+    float: left;
+    border-radius: 20px;
+    width: 20%;
+    height: 40%;
+    margin: 40px 5px;
+}
+img#top_travel{
+    width: 25%;
+    height: 20%;
+    margin: 30px 50px;
+}
+img#english{
+    float: right;
+    width: 16%; 
+    height: 20%;
+    margin-top: 18%;
+    margin-right: 0px;    
+}
+
+/* 文本浮动在右 */
+article.a_right{
+    margin-right: 30px;
+    margin-top: 30px;
+    width:450px;
+    height: fit-content;
+    float: right;
+}
+/* 文本浮动在左 */
+article.a_left{
+    margin-left: 150px;
+    margin-top: 30px;
+    width:450px;
+    height: fit-content;
+    float: left;
+}
+/* 长度固定文本框 */
+article#a_shorter{
+    height: 200px;
+    margin-left: 150px;
+    margin-top: 30px;
+    width:450px;
+    float: left;
+    clear: left;
+}

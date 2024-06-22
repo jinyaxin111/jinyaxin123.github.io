@@ -1,0 +1,232 @@
+body{
+    margin: 0px;
+    line-height: 1.25em;
+    font-family: Arial,Georgia, "Times New Roman", Times, serif;
+    background-size: contain;
+    background-image: url(./image/background.JPG);
+}
+/* header+nav采用定位布局 footer采用盒模型布局 */
+/* 页眉 */
+header{
+    height: 120px;
+    background-color: #a1bba17e;
+}
+/* 页脚 */
+footer{
+    background:#a1bba1ba; 
+    height: 35px;
+    padding-top: 10px;
+    margin-top: 30px;
+    font: italic 14px/1.5 Microsoft YaHei, Helvetica, STHeiti STXihei, Microsoft JhengHei, Tohoma, Arial;
+    color: #41594c;
+    text-align: center;
+    clear: both;
+}
+/* Welcome字体格式 */
+section#head{
+    position: absolute;
+    left: 195px;
+    top:  10px;
+    width: 480px;
+    font:500 xx-large Comic Sans MS,"Times New Roman",sans-serif;
+    color:  #438265b0;
+}
+/* Life字体格式 */
+section#head_right{
+    position: absolute;
+    right: 160px;
+    top: 50px;
+    line-height: 1.5;
+    font: 400 medium Comic Sans MS,"Times New Roman",Verdana;
+    color:  #438265b0;
+}
+
+/* header左上角的小图格式 */
+img#koutu{
+    position: absolute;
+    left: 40px;
+    top: 0;
+    height: 135px;
+    width: 130px;
+    /* float: left; */
+}
+/* header右上角的图案格式 */
+img#yemei{
+    top: 30px;
+    right: 60px;
+    position: absolute;
+    height: 60px;
+    width: 90px;
+    object-fit: cover;
+}
+
+/* --------------- nav ---------------- */
+nav{
+    height: 40px;
+    background-color: #a1bba1ba;
+    /* margin-right: auto;
+    margin-left: auto; */
+}
+
+nav ul{
+    margin: 0px;
+    list-style-type: none;
+    position: absolute;
+    top:130px;
+    right: 5px;
+    height: 36px;
+}
+/* 列表项转换为内联元素 两项之间间隔40px */
+nav ul li{
+    display: inline;
+    /* 既能保持一个合适的距离,又能让上边框的长度不太夸张 */
+    padding: 10px 30px 10px 30px;
+    margin: 0px 10px 0px 10px;
+    height: 36px;
+}
+
+nav ul li a:link, nav ul li a:visited {
+	text-decoration: none;
+    letter-spacing: 2.5px;
+    color: #e8f5f0;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+/* 表示当前页面的列表项样式 */
+nav ul li.selected {
+    border-top:  #6aa16f96 solid 3px;
+    background-color: #aaceaae3;
+}
+
+/* ------------------ aside ------------------- */
+/* 边栏右下角的图片格式 */
+img#side_image{
+    width: 270px;
+    height: 180px;
+    margin-right: 12px;
+    margin-bottom: 10px;
+    float: right;
+}
+/* 边栏样式 */
+aside{
+    margin-top: 90px;
+    margin-bottom: 30px;   
+    padding-top: 20px;
+    height: 840px;
+    width: 350px;
+    float: right;
+    background-image: url(./image/background-aside.JPG);
+    background-position: center;
+    background-size: cover;
+}
+/* 边栏标题 */
+.asideh{
+    margin-top: 5px;
+    letter-spacing: 4px;
+    text-align: center;
+    font:400 x-large;
+    color: #fbfdfc;    
+}
+/* 边栏列表文字格式 */
+aside ul li{
+    color:#317458;
+    font-weight: bold;
+    font-size: large;
+    line-height: 35px;
+}
+
+/* ------------------ main ------------------- */
+/* 中心图片格式 */
+img#pri-image{
+    margin-top: 10px;
+    width: 510px;
+    height: 340px;
+    float: left;
+}
+/* 左侧图片格式 */
+img#l-image{
+    margin-left: 160px;
+    padding-top: 60px;
+    width: 320px;
+    height: 240px;
+    float: left;
+}
+/* 右侧图片格式 */
+img#r-image{
+    margin-right: 100px;
+    padding-top: 60px;
+    width: 300px;
+    height: 240px;
+    float: left;
+}
+
+
+/* 为主体内容设定统一格式 */
+div.inner{
+    width: 1000px;
+    margin-right: 355px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    line-height: 25px;
+    font-weight: 1.2em;
+    color: #184627;
+    height:fit-content;
+}
+/* 简历里每一项的标题格式：加粗显示/颜色突出 */
+.item{
+    font-weight: bold;
+    font-size: large;
+    color: #317458;
+}
+/* 简历表右部分的行首单元格 加右框线 */
+.item_2{
+    font-weight: 530;
+    border-right:#7598af7b thin solid ;
+}
+/* 合并单元格的格式设置：居中，字号更大、更粗，行间距更大，并显示单元格下框线*/
+.center{
+    letter-spacing: 4px;
+    text-align: center;
+    font-family: serif;
+    font-weight: bolder;
+    font-size: 140%;
+    border-bottom: #7598af8c thin solid;
+    height: 40px;
+    color: #41594c;
+    border-spacing: 2px 40px;
+}
+
+/* 简历表的左部分格式 */
+div.inner table#t_left{
+    margin-left: 30px;
+    margin-top: 40px;
+    width: 300px; 
+    float: left;
+    text-align: left;
+    /* 让每行间距更大，排版更美观 */
+    border-spacing: 2px 15px;
+}
+/* 简历表的右部分格式 */
+div.inner table#t_right{
+    margin-left: 10px;
+    margin-top: 50px;
+    width: 650px; 
+    padding-top: 10px;
+    float: left;
+    text-align: left;
+    /* 调整单元格间距 */
+    border-spacing: 5px 12px;
+}
+
+/* 放登记照的单元格大小及行间距单独设定 */
+div.inner table#t_left td#photo{
+    text-align: center;
+    border-spacing: 2px 40px;
+}
+/* 登记照大小设置 */
+div.inner table#t_left td#photo img#sphote{
+    height: 220px;
+    width: 200px;
+}

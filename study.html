@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>study</title>
+    <link rel="stylesheet" href="./css/study.css">
+</head>
+<body>
+    <!-- 页眉区和导航区采用绝对定位布局 -->
+    <!-- 页眉区header -->
+    <header>
+        <!-- 页眉区左上角蝴蝶图案 样式id为koutu -->
+        <img id="koutu" src="./image/study/butterfly3.PNG" alt="">
+        <!-- 页眉文字区：用div封装 -->
+        <div>
+           <section id="head">Welcome to <br>Jin Yaxin's self-introduction</section>
+           <!-- 页眉区右上角巧克力图案 样式id为yemei -->
+           <img src="./image/study/yemei3.PNG" alt="" id="yemei">
+           <section id="head_right">Life is like a box of chocolates.生活就像一盒巧克力。</section> 
+        </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- 导航区nav -->
+    <!-- 包含基本信息（首页）、在校经历、比赛经历、课外生活、留言板五个页面 -->
+    <nav>
+        <ul>
+            <li><a href="./index.html">基本信息</a></li>
+            <li><a href="./academic.html">在校经历</a></li>
+            <li class="selected"><a href="./study.html">比赛经历</a></li>
+            <li><a href="./entertainment.html">课外生活</a></li>
+            <li><a href="./chat.html">留言板</a></li>
+        </ul>
+    </nav>
+    <!-- end of nav -->
+
+    <!-- 头部图片区，每个图片边框加粗，共5张 -->
+    <img src="./image/study/centification_bowen.jpg" alt="" class="top_img">
+    <img src="./image/study/centification_iternet.jpg" alt="" class="top_img">
+    <img src="./image/study/centification_mingli.jpg" alt="" class="top_img">
+    <img src="./image/study/centification_dance.jpg" alt="" class="top_img">
+    <img src="./image/study/centification-L'OREAL.jpg" alt="" class="top_img">
+    <!-- end of 头部图片区 -->
+
+    <!-- 主内容区用公共类inner来放置所有内容，内容区宽度占浏览器95%，居中放置，主要采用盒模型布局+浮动布局 -->
+    <div class="inner">
+        <!-- 1号内容区cont_1_1，内部包含四个section，分别放置各比赛经历介绍 -->
+        <div id="cont_1_1">
+            <!-- section1：放置文字的公共类left_main和三张照片，文字浮动在左 -->
+            <section>
+                <article class="left_main">
+                    <h1>《基于知识图谱与BERT算法的实时动态匹配的线上个性化学习系统研究——以百科园为例》</h1>
+                    <h2>———第三十五届“博文杯”大学生实证创新基金项目<b>结项</b></h2>
+                    <p>该项目基于知识图谱和BERT算法，通过实时捕捉学生的学习知识情况，根据学生的知识点掌握水平，
+                        并结合知识点间的相关度推荐出适合其知识掌握水平难度的试题来解决知识漏洞问题；
+                        作为主要成员，我运用多学科知识交叉融合，整理撰写了项目创新突破点、用户数据动态收集部分以及流程图绘制等内容
+                    </p>
+                </article>
+                <img src="./image/study/project/bowen1.png" alt="" class="rectangular">
+                <img src="./image/study/project/bowen2.png" alt="" class="rectangular">
+                <img src="./image/study/project/bowen3.png" alt="" class="rectangular">
+            </section>
+            <!-- end of section1 -->
+
+            <!-- section2：放置文字的公共类left_main -->
+            <section>
+                <article class="left_main">
+                    <h1>《数字“狱”警——视觉AI技术赋能监保一体系统开创者》</h1>
+                    <h2>——第十届“明理杯”创新创业竞赛<b>校级一等奖</b> & 第九届汇创青春<b>入围二三等奖候选</b> </h2>
+                    <p>
+                        该项目致力于基于计算机视觉技术、人工智能算法、深度学习算法、高精度定位技术，打造出一套监狱智能化监保一体系统，
+                        运用骨骼关键点人体动作识别技术和多种高精度定位技术，提升监舍的管理效率和安全性，赋能监狱管理理念和管理模式的创新；
+                        在本项目中，我负责整合本项目中的所有技术部分，详细介绍了该系统的运作流程以及落地方案
+                    </p>
+                </article>
+            </section>
+            <!-- end of section2 -->
+            
+            <!-- section3：放置文字的公共类left_main和三张照片-->
+            <section>
+                <article class="left_main">
+                    <h1>《农业绿色转型背景下政策工具对农户的激励作用与影响机制分析——基于4省20村的实地调研》</h1>
+                    <h2>——参与大学生创新创业训练计划项目</h2>
+                    <p>该项目的研究主要聚焦于在政策层面，拟从政策制定与实施两个方面分析政策工具对农户绿色转型的激励作用与影响机制，
+                        项目主要包括对政策雨季里的指标构建、相关性分析以及对实地调研的数据进行质性分析三个步骤；
+                        在本项目中我对国内外在绿色发展、农户绿色转型以及政策工具等方面的研究做了详细的文献综述，并撰写了项目书中基于NLP的访谈文本相关性分析部分，
+                        绘制和美化了项目书中的PMC曲面图和流程图
+                    </p>
+                </article>
+                <img src="./image/study/project/green.png" alt="" class="rectangular">
+                <img src="./image/study/project/green2.png" alt="" class="rectangular">
+                <img src="./image/study/project/green3.png" alt="" class="rectangular">
+            </section>
+            <!-- end of section3 -->
+            
+            <!-- section4：放置文字的公共类left_main和六张照片 -->
+            <section>
+                <article class="left_main">
+                    <h1>《乡韵悠游——一款融合全球文化的大学生“社交电商平台”》</h1>
+                    <h2>——参与中国国际大学生创新大赛（2024）</h2>
+                    <p>
+                        该项目秉持着“讲好家乡故事，做好家乡宣传，实现全球传播”的核心理念，鼓励大学生讲好家乡故事，发掘推广家乡小众景点，
+                        提供特产售卖和互换平台，旨在搭建一个全球性的大学生文化社交和电商平台；
+                        在该项目里，我通过与项目负责人和其他主要成员的沟通交流，确定了本项目的业务需求，并为本项目设计了一套UI界面
+                    </p> 
+                </article>
+                <img class="rectangularUI" src="./image/study/UIwork/首页.png" alt="">
+                <img src="./image/study/UIwork/个人主页1.png" alt="" class="rectangularUI">
+                <img src="./image/study/UIwork/放大地图.png" alt="" class="rectangularUI">
+                <img src="./image/study/UIwork/商城.png" alt="" class="rectangularUI">
+                <img src="./image/study/UIwork/商品详情页.png" alt="" class="rectangularUI">
+                <img src="./image/study/UIwork/社区.png" alt="" class="rectangularUI">
+            </section>
+            <!-- end of section4 -->
+        </div>        
+        <!-- end of cont_1_1 -->
+
+        <!-- 2号内容区cont_1_2，内部包含五个section，分别放置各比赛经历 -->
+        <div id="cont_1_2">
+            <!-- section1：放置文字的公共类right_main -->
+            <section>
+                <article class="right_main">
+                    <h1>《一景易价——基于动态应用场景库的全新智能化数据定价平台》</h1>
+                    <h2>———第九届中国国际“互联网+”大学生创新创业大赛<b>院级三等奖</b> </h2>
+                    <p>该项目率先提出国内首个数据交易应用场景智能化评估定价平台，以“安心交易，放心收益”为宗旨，
+                        聚焦于数据在不同场景中发挥出的价值，进行动态定价；
+                        在本项目中我负责了基于Shapley值对数据的效用进行定价的技术撰写，
+                        并对数据交易的现有市场、痛点以及竞品进行了详细分析
+                    </p>
+                </article>
+            </section>
+            <!-- end of section1 -->
+            
+            <!-- section2：放置文字的公共类right_main和五张照片 -->
+            <section>
+                <article class="right_main">
+                    <h1>《衣享云端》</h1>
+                    <h2>——大学生创新创业训练计划项目<b>中期检查排名前列</b>（3/16） & 中国国际大学生创新大赛（2024）<b>院级三等奖</b>  & 
+                        第十届“明理杯”创新创业竞赛院级二等奖</h2>
+                    <p>该项目拟打造一款智能化衣橱管理推荐APP，为用户提供精密化、个性化的掌上衣橱，在实现用户衣物资源化管理的同时，
+                       结合多元要素为用户个性化推荐穿搭方案，并通过3D虚拟人呈现用户的真实穿搭效果；
+                       作为主要成员/负责人，我主要撰写了基于DRCNN（Dynamic Routing Convolutional Neural Network）的3D衣物识别的技术部分，
+                       提供了基于KRMVC的用户偏好获取技术论文，并绘制了项目APP的工作流程图以及平台介绍海报
+                    </p>
+                </article>
+                <img src="./image/study/project/yixiangyunduan.png" alt="" class="circle">
+                <img src="./image/study/project/yixiangyunduan0.png" alt="" class="rectangularUI">
+                <img src="./image/study/project/yixiangyunduan(1).png" alt="" class="rectangularUI">
+                <img src="./image/study/project/yixiangyunduan(2).png" alt="" class="rectangularUI">
+                <img src="./image/study/project/yixiangyunduan(3).png" alt="" class="rectangularUI">
+            </section>
+            <!-- end of section2 -->
+               
+            <!-- section3：放置文字的公共类right_main和四张照片 -->
+            <section>
+                <article class="right_main">
+                    <h1>《水》&《盛装·礼赞》</h1>
+                    <p>——分别获得2023年“希贤杯”系列竞赛之校园舞蹈大赛<b>优秀奖</b> 、
+                        2024年“希贤杯”系列竞赛之校园舞蹈大赛<b>三等奖（学院第二次获奖）</b> 
+                    <p>
+                </article> 
+                <img src="./image/study/dance0.JPG" alt="" class="circle">
+                <img src="./image/study/dance1.JPG" alt="" class="circle">
+                <img src="./image/study/dance2.jpg" alt="" class="circle">
+                <img src="./image/study/dance3.jpg" alt="" class="circle">
+            </section>
+            <!-- end of section3 -->
+
+            <!-- section4：放置文字的公共类right_main -->
+            <section>
+                <article class="right_main">
+                    <h1>2024年欧莱雅商赛</h1>
+                    <p>
+                        本小组选择了重塑美护发服务：打造增强型技术（如AI、AR、大数据应用等），
+                        帮助专业人士更精准地诊断并预测消费者需求这一赛道，基于海量美发数据和用户个人数据针对性推荐适合用户的发型，以及
+                        适合用户的欧莱雅系列产品，并为用户举行大型线上美发沙龙，促进审美交融；
+                        作为小组主要成员，我贡献了部分创新思路，并制作了参赛的视频作品
+                    </p>
+                </article>
+            </section>
+            <!-- end of section4 -->
+
+            <!-- section5：放置文字的公共类right_main和三张照片 -->
+            <section>
+                <article class="right_main">
+                    <h1>中南财经政法大学第十七届武术散打比赛</h1>
+                    <h2>——女子甲组56kg级八强</h2>
+                    <p>
+                        大二上第一次接触散打（体育专项）课程，大二下要求报名参与第十七届武术散打比赛；
+                        在整个活动赛程中，我参与了四轮比赛，并在第三轮时成功晋级八强
+                    </p>
+                </article>
+                <img src="./image/study/project/fight1.jpg" alt="" class="circle">
+                <img src="./image/study/project/fight2.JPG" alt="" class="circle">
+                <img src="./image/study/project/fight3.JPG" alt="" class="circle">
+            </section>
+            <!-- end of section5 -->
+        </div>
+        <!-- end of cont_1_2 -->
+    </div>
+    <!-- end of 主内容区 -->
+
+    <!-- 页脚区footer 采用盒模型布局，高度固定，文字居中，清除所有浮动元素 -->
+    <footer>Copyright&copy;Jin Yaxin</footer>
+    <!-- end of footer --> 
+</body>
+</html>

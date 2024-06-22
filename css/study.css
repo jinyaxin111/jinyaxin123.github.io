@@ -1,0 +1,207 @@
+body{
+    margin: 0;
+    line-height: 1.25em;
+    font-family: Arial, Georgia,"Times New Roman", Times, serif;
+    background-size: contain;
+    background-image: url(./image/background.JPG);
+}
+/* header+nav采用定位布局 */
+/* 页眉 */
+header{
+    height: 120px;
+    background-color: #a1bba17e;
+}
+/* 页脚 footer采用盒模型布局 */
+footer{
+    background:#a1bba1ba; 
+    height: 35px;
+    padding-top: 10px;
+    margin-top: 30px;
+    font: italic 14px/1.5 Microsoft YaHei, Helvetica, STHeiti STXihei, Microsoft JhengHei, Tohoma, Arial;
+    color: #41594c;
+    text-align: center;
+    clear: both;
+}
+/* Welcome字体格式 */
+section#head{
+    position: absolute;
+    left: 195px;
+    top:  10px;
+    width: 480px;
+    font:500 xx-large Comic Sans MS,"Times New Roman",sans-serif;
+    color:  #438265b0;
+}
+/* Life字体格式 */
+section#head_right{
+    position: absolute;
+    right: 160px;
+    top: 50px;
+    line-height: 1.5;
+    font: 400 medium Comic Sans MS,"Times New Roman",Verdana;
+    color:  #438265b0;
+}
+
+/* header左上角的小图格式 */
+img#koutu{
+    position: absolute;
+    left: 40px;
+    top: 0;
+    height: 135px;
+    width: 130px;
+}
+/* header右上角的图案格式 */
+img#yemei{
+    /* float: right; */
+    top: 30px;
+    right: 60px;
+    position: absolute;
+    height: 60px;
+    width: 90px;
+    object-fit: cover;
+}
+
+/* --------------- nav ---------------- */
+nav{
+    height: 40px;
+    background-color: #a1bba1ba;
+}
+
+nav ul{
+    margin: 0px;
+    list-style-type: none;
+    position: absolute;
+    top:130px;
+    right: 5px;
+    height: 36px;
+}
+/* 列表项转换为内联元素 两项之间间隔40px */
+nav ul li{
+    display: inline;
+    /* 既能保持一个合适的距离,又能让上边框的长度不太夸张 */
+    padding: 10px 30px 10px 30px;
+    margin: 0px 10px 0px 10px;
+    height: 36px;
+}
+
+nav ul li a:link, nav ul li a:visited {
+	text-decoration: none;
+    letter-spacing: 2.5px;
+    color: #e8f5f0;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+/* 表示当前页面的列表项样式 */
+nav ul li.selected {
+    border-top:  #6aa16f96 solid 3px;
+    background-color: #aaceaae3;
+}
+
+/* ---------------- main ---------------- */
+/* 奖项图片加边框 */
+img.top_img{
+    margin: 30px 5px 20px 5px;
+    width: 264px;
+    height: 176px;
+    object-fit: contain;
+    float: left;
+    border: #5c916cb3 outset thick;
+}
+
+/* 内容占浏览器的95%，并居中 */
+div.inner{
+    width:95%; 
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+div.inner div#cont_1_1{
+    height: fit-content;
+    width: 800px;
+    margin-top: 30px;
+    border-right: 1.2px groove #6aa16f96; 
+    float: left;
+}
+div.inner div#cont_1_2{
+    height: fit-content;
+    width: 550px;
+    margin-top: 30px;
+    float: left;
+}
+
+h1{
+    font-size: 1.4em;
+    line-height: 1.25em;
+    color: #41594c;
+    letter-spacing: 3px;
+    border-bottom: #41594c5d dashed thin;
+}
+h2{
+    line-height: 1.25em;
+    font-size: 1.1em;
+    color: #4e675a;
+}
+p{
+    font-size: 1.1em;
+    line-height: 25px;
+    color: #4e675a;
+}
+
+/* 让每一个内容和其对应图片的分区更清晰 */
+section{
+    height: fit-content;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+/* 左主内容块 */
+article.left_main{
+    width: fit-content;
+    /* 让article长度随内容多少自动变化 */
+    height:fit-content;
+    padding: 15px 0px 20px 20px;
+    float: left;
+}
+
+/* 右主内容块 */
+article.right_main{
+    width: fit-content;
+    /* 让article长度随内容多少自动变化 */
+    height:fit-content;
+    padding: 15px 0px 20px 20px;
+    float: left;
+}
+/* 圆形图片 */
+img.circle{
+    clip-path: circle(40%);
+    height: 30%;
+    width: 25%;
+    float: left;
+    vertical-align: center;
+}
+/* 矩形图片UI */
+img.rectangularUI{
+    /* 对图片进行模糊处理 */
+    backdrop-filter: blur(25px);
+    margin: 15px 10px 10px 3px;
+    object-fit: cover;
+    width: 15%;
+    height: 15%;
+    float: left;
+}
+/* 矩形图片横 */
+img.rectangular{
+    /* 对图片进行模糊处理 */
+    backdrop-filter: blur(25px);
+    margin: 15px 20px 20px 3px;
+    object-fit: cover;
+    width:25%;
+    height:25%;
+    float: left;
+}
+/* 椭圆图片 */
+img.ellipse{
+    margin:15px 10px 10px 3px;
+    border-radius: 50%;
+    width: 30%;
+    height: 25%;
+    float: left; 
+}

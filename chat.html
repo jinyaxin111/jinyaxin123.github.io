@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat</title>
+    <link rel="stylesheet" href="./css/chat.css">
+</head>
+<body>
+    <!-- 页眉区和导航区采用绝对定位布局 -->
+    <!-- 页眉区header -->
+    <header>
+        <!-- 页眉区左上角蝴蝶图案 样式id为koutu -->
+        <img id="koutu" src="./image/chat/butterfly3.PNG" alt="">
+        <!-- 页眉文字区：用div封装 -->
+        <div>
+           <section id="head">Looking forward <br>to talking with you~</section>
+           <!-- 页眉区右上角巧克力图案 样式id为yemei -->
+           <img src="./image/chat/yemei3.PNG" alt="" id="yemei">
+           <section id="head_right">Life is like a box of chocolates.生活就像一盒巧克力。</section> 
+        </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- 导航区nav -->
+    <!-- 包含基本信息（首页）、在校经历、比赛经历、课外生活、留言板五个页面 -->
+    <nav>
+        <ul>
+            <li><a href="./index.html">基本信息</a></li>
+            <li><a href="./academic.html">在校经历</a></li>
+            <li><a href="./study.html">比赛经历</a></li>
+            <li><a href="./entertainment.html">课外生活</a></li>
+            <li class="selected"><a href="./chat.html">留言板</a></li>
+        </ul>
+    </nav>
+    <!-- end of nav -->
+
+    <!-- 边栏区，左右图片均采用绝对定位布局 -->
+    <img src="./image/chat/flower.png" alt="" id="side_flower">
+    <img id="side_people" src="./image/chat/side.png" alt="">
+    <!-- end of 边栏区 -->
+
+    <!-- 留言区 用公共类wrap来放置所有内容，用form-wrap实现hover前后的变化，
+         留言板主内容用form来放置，留言区整体采用盒模型布局+定位布局  -->
+    <div id="wrap">
+        <div id="form-wrap">
+            <form>
+                <p>HELLO MY FRIEND,</p>
+                <label for="email">Your Message:</label>
+                <textarea name="message" id="message" value="Your Message"></textarea>
+
+                <p>BEST,</p>
+                <label for="name">Name:</label>
+                <input type="text" name="name" value="" id="name">
+
+                <label for="email">Email:</label>
+                <input type="text" name="email" value="" id="email">
+                <input type="submit" name="submit" value="CLICK HERE, I'LL GET YOU!">
+            </form>
+        </div>
+    </div>
+    <!-- end of 留言区 -->
+
+    <!-- 页脚区footer 采用盒模型布局，高度固定，文字居中，清除所有浮动元素 -->
+    <footer>Copyright&copy;Jin Yaxin</footer>
+    <!-- end of footer -->
+</body>
+</html>

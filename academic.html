@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>academic</title>
+    <link rel="stylesheet" href="./css/academic.css">
+</head>
+<body>
+    <!-- 页眉区和导航区采用绝对定位布局 -->
+    <!-- 页眉区header -->
+    <header>
+        <!-- 页眉区左上角蝴蝶图案 样式id为koutu -->
+        <img id="koutu" src="./image/academic/butterfly3.PNG" alt="">
+        <!-- 页眉文字区：用div封装 -->
+        <div>
+           <section id="head">Welcome to <br>Jin Yaxin's self-introduction</section>
+           <!-- 页眉区右上角巧克力图案 样式id为yemei -->
+           <img src="./image/academic/yemei3.PNG" alt="" id="yemei">
+           <section id="head_right">Life is like a box of chocolates.生活就像一盒巧克力。</section> 
+        </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- 导航区nav -->
+    <!-- 包含基本信息（首页）、在校经历、比赛经历、课外生活、留言板五个页面 -->
+    <nav>
+        <ul>
+            <li><a href="./index.html">基本信息</a></li>
+            <li class="selected"><a href="./academic.html">在校经历</a></li>
+            <li><a href="./study.html">比赛经历</a></li>
+            <li><a href="./entertainment.html">课外生活</a></li>
+            <li><a href="./chat.html">留言板</a></li>
+        </ul>
+    </nav>
+    <!-- end of nav -->
+
+    <!-- 边栏区aside 采用浮动布局+盒模型布局，浮动在页面右边-->
+    <aside>
+        <h1 id="center">经历概览</h1>
+        <!-- 包含两个列表项的无序列表ul -->
+        <ul>
+            <!-- 列表项1：包含h2标题、blockquote和三张图片 -->
+            <li>
+                <h2>学生工作</h2>
+                <blockquote>
+                    ①参与组织了<b>三次经验交流会</b>，负责筹划了<b>三次分享讲座</b>，分享范围<b>近1000人次</b>；<br>
+                    ②参与举办了<b>三次赛事活动</b>，负责组织开展了<b>两次比赛评审工作</b>，<b>参与队伍近100支</b>；<br>
+                    ③协助其他部门举办<b>送毕晚会、师生联谊会、大运会</b>等多项大型活动；<br>
+                    ④部门招新工作获得23级新生的良好反响，<b>面试人数创新高</b>；
+                    ⑤大三将继续留任学院团委学生会<b>创新创业中心主任</b>；
+                </blockquote>
+                <img class="aside_img" src="./image/academic/worker1.jpg" alt="">
+                <img class="aside_img" src="./image/academic/worker2.png" altcover_img="">
+                <img class="cover_img" src="./image/academic/rongyu-ss_student.png" alt="">
+            </li>
+            <!-- end of 列表项1 -->
+
+            <!-- 列表项2：包含h2标题、blockquote和一张图片 -->
+            <li>
+                <h2>志愿活动</h2>
+                <blockquote>
+                    ① <b>担任“七彩四点半——千家街儿童帮扶计划”周二负责人</b>，协助开展为期三个多月的志愿活动；<br>
+                    ②担任湖北省孝感市地区的2023年本科招生“新声代”志愿者；<br>
+                    ③参与23届中南财经政法大学迎新活动志愿服务；<br>
+                    ④参与2024年武汉马拉松志愿活动,<b>担任医疗志愿者</b>；
+                </blockquote>
+                <img src="./image/academic/rongyu-voluntary.png" alt="" class="cover_img">
+            </li>
+            <!-- end of 列表项2 -->
+        </ul>
+        <!-- end of ul -->
+    </aside>
+    <!-- end of aside -->
+
+    <!-- 主内容区用公共类inner来放置所有内容，内容区宽度固定，右侧留出边栏区的位置 -->
+    <div class="inner">
+        <!-- 主要采用盒模型布局方式 article和img采用浮动布局 -->
+        <!-- 共包含六个section，每个section都有一个公共类main，宽度和高度固定 -->
+        <!-- section1，包含具有公共类left_a的article和四张图片 article在左，图片在右-->
+        <section class="main">
+             <article class="left_a">
+                <h1>济世杯系列赛事</h1>
+                <p>
+                    大一作为院创业实践部干事，参与组织了济世杯系列的三次活动：面试技巧培训会、济世杯笔试（初赛）以及济世杯面试（决赛），
+                    负责了活动的PPT制作、材料收集、分数统计、场地布置等工作，完成工作的同时也学习和实践了许多招聘面试技巧；            
+                </p>
+            </article>
+            <img src="./image/academic/interview1 .png" alt="">
+            <img src="./image/academic/interview2.jpg" alt="">
+            <img src="./image/academic/interview3.png" alt="">
+            <img src="./image/academic/interview4.png" alt="">
+        </section>
+        <!-- end of section1 -->
+
+        <!-- section2，包含具有公共类right_a的article和四张图片 article在右，图片在左 -->
+        <section class="main">
+            <article class="right_a">
+                <h1>双创赛事经验分享系列讲座</h1>
+                <p>
+                    大一作为干事参与了两次双创赛事的经验交流会，负责了活动的PPT以及活动的通知宣传 <br>
+                    大二作为主要负责人筹划了双创系列分享讲座（3次），负责活动的整体安排和进度，分享近400人次；<br>
+                </p>
+            </article>
+            <img src="./image/academic/meeting1.jpg" alt="">
+            <img src="./image/academic/meeting2.jpg" alt="">
+            <img src="./image/academic/meeting3.png" alt="">
+            <img src="./image/academic/meeting4.png" alt="">
+        </section>
+        <!-- end of section2 -->
+
+        <!-- section3，包含具有公共类left_a的article和四张图片 article在左，图片在右-->
+        <section class="main">
+            <article class="left_a">
+                <h1>院级双创赛事&活动</h1>
+                <p>
+                    参与以及筹划了共三次院级双创赛事：第九届“互联网+”国际大学生创新创业大赛，
+                    第十届“明理杯”大学生创新创业竞赛暨第十四届“挑战杯”大学生创业计划竞赛，中国国际大学生创新大赛（2024），参与队伍近100支；<br>
+                    协助院团委组织了创新创业赛事研讨会；
+                </p>
+            </article>
+            <img src="./image/academic/competition1.jpg" alt="">
+            <img src="./image/academic/competition2.jpg" alt="">
+            <img src="./image/academic/competition4.jpg" alt="">
+            <img src="./image/academic/summit2.png" alt="">
+        </section>
+        <!-- end of section3 -->
+
+        <!-- section4，包含具有公共类right_a的article和两张图片 article在右，图片在左 -->
+        <section class="main">
+            <article class="right_a">
+                <h1>协助&参与开展院内其他工作</h1>
+                <p>
+                    配合院组织部、文艺统筹部、体育部等多个部门开展了两届送毕晚会、师生联谊会、大运会、
+                    团学志总结大会等多项大型活动;
+                    积极参与了团学志招新大会、团学志例会以及团学志总结大会等；
+                </p>
+            </article>
+            <img src="./image/academic/collabaration1.jpg" alt="">
+            <img src="./image/academic/collabaration2.jpg" alt="">
+        </section>
+        <!-- end of section4 -->
+
+        <!-- section5，包含具有公共类left_a的article和四张图片 article在左，图片在右-->
+        <section class="main">
+            <article class="left_a">
+                <h1>千家街儿童帮扶计划周二负责人</h1>
+                <p>负责招募每周二的志愿者，维持活动时间内社区志愿者和儿童的秩序，并做好志愿者的记录和整理工作，
+                    让活动的意义能有效发挥，真正帮助到来到社区的儿童的课业</p>
+            </article>
+            <img src="./image/academic/voluntary_child1.JPG" alt="">
+            <img src="./image/academic/voluntary_child2.jpg" alt="">
+            <img src="./image/academic/voluntary_child3.png" alt="">
+            <img src="./image/academic/voluntary_child4.JPG" alt="">
+        </section>
+        <!-- end of section5 -->
+
+        <!-- section6，包含具有公共类right_a的article和四张图片 article在右，图片在左 -->
+        <section class="main">
+            <article class="right_a">
+                <h1>其他志愿活动</h1>
+                <p>
+                    <b>“2023年本科招生‘新声代’志愿活动”</b>：作为湖北省孝感市的学生志愿者之一，为该地区的高考生提供答疑解惑的服务；<br>
+                    <b>23届迎新志愿活动</b>：作为师姐，给23届大一新生做入学时指引，让他们能更好地熟悉校园、适应校园；<br>
+                    <b>2024武汉马拉松志愿活动</b>：作为本次汉马的医疗志愿者，为选手们喷喷雾、观察选手身体状态并及时上报，
+                    为选手们的安全保驾护航，保证汉马的顺利开展；
+                </p>
+            </article>
+            <img src="./image/academic/voluntary_freshmen.jpeg" alt="">
+            <img src="./image/academic/voluntary_hanma.jpg" alt="">
+            <img src="./image/academic/voluntary_hanma1.jpg" alt="">
+            <img src="./image/academic/voluntary_hanma2.jpg" alt="">
+        </section>
+        <!-- end of section6 -->
+    </div>
+    <!-- end of 主内容区 -->
+
+    <!-- 页脚区footer 采用盒模型布局，高度固定，文字居中，清除所有浮动元素 -->
+    <footer>Copyright&copy;Jin Yaxin</footer>
+    <!-- end of footer -->
+</body>
+</html>
